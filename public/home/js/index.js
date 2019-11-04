@@ -30,12 +30,23 @@ $(document).on("click", ".subtract", function(){
     let index = Plates.indexOf(clicked)
 
     Plates.splice(index, 1)
+    PVs.splice(index, 1)
 
     console.log("=======")
     console.log(Plates)
     updatePlates()
+    updateNums()
 })
-
+$("#clear").on("click", function(){
+    TW = 0
+    BW = 0
+    TPW = 0
+    plateNum = 0
+    Plates = []
+    PVs = []
+    updateNums()
+    updatePlates()
+})
 function updateNums (){
     PVs.sort(function(a, b){return (b-a)})
     // reduce the Plate values array to a sum
@@ -57,10 +68,10 @@ function updatePlates (){
     Plates.sort(function(a, b){return (b-a)})
 
     for(let i=0; i<Plates.length; i++){
-        var newdiv = $("<div>")
+        var newdiv = $("<div class='newplate'>")
         var newPlate = $("<h4>"+ Plates[i] + "</h4>")
         var newAdd = $("<button class='subtract' value="+parseInt(Plates[i]*2)+" data-number="+Plates[i]+">-</button>")
         $(newdiv).append(newPlate, newAdd)
-        $("#Plates").append(newdiv, newPlate, newAdd)
+        $("#Plates").append(newdiv)
     }
 }

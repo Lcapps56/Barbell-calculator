@@ -8,20 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Plates</h1>
-    <button id="45" class="plate" value="90">45</button>
-    <button id="25" class="plate" value="50">25</button>
-    <button id="10" class="plate" value="20">10</button>
-    <button id="5" class="plate" value="10">5</button>
+  <button id="clear">Clear all</button>
+    <div id="plates">
+      <button id="45" class="plate" value="90">45</button>
+      <button id="45" class="plate" value="70">35</button>
+      <button id="25" class="plate" value="50">25</button>
+      <button id="10" class="plate" value="20">10</button>
+      <button id="5" class="plate" value="10">5</button>
+    </div>
+    
+    <div id="bars">
+      <button id="Bs45" class="bar" value="45"><img src="../images/rack45.png"></button>
+      <button id="B35" class="bar" value="35">35</button>
+    </div>
 
-    <h1>Bars</h1>
-    <button id="Bs45" class="bar" value="45">45</button>
-    <button id="B35" class="bar" value="35">35</button>
-
+    
     <h1 class="TW">Total weight: <span  class="TW" id="TW"></span></h1>
-    <h1>Total plate weight: <span id="TPW"></span></h1>
-    <h1>Bar weight: <span id="BW"></span></h1>
-    <h1>Plates: <span id="Plates"></span></h1>
+    <h1 class="BW">Bar weight: <span id="BW"></span></h1>
+    <h1 class="Plates">Plates: <span id="Plates"></span></h1>
 
 
     <script

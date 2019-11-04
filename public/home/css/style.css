@@ -8,6 +8,48 @@ html{
     margin: 0px;
     padding: 0px; */
 }
-#TW{
+.TW{
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.BW{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.Plates{
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}
+.newplate{
+    display: inline-block;
+}
+.newplate h4{
+    margin: 2px;
+}
+
+#plates{
+    position: absolute;
+    margin-top: 10px;
+    left: 40px;
+    top: 450px;
+}
+#Plates span{
+
+}
+#plates button{
+    display: block;
+    margin: 20px;
+}
+#bars{
+    position: absolute;
+    right: 40px;
+    top: 450px;
+}
+#bars button{
+    display: block;
+    margin: 20px;
 }
