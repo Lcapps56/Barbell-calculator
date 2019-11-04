@@ -25,13 +25,15 @@ $(".bar").on("click", function(){
 
 $(document).on("click", ".subtract", function(){
     console.log(Plates)
-    // remove the chosen value from both arrays
-    removeFromArray(Plates)
+
+    let clicked = ($(this).data("number")).toString()
+    let index = Plates.indexOf(clicked)
+
+    Plates.splice(index, 1)
 
     console.log("=======")
     console.log(Plates)
-    // var newPlates
-    // updatePlates()
+    updatePlates()
 })
 
 function updateNums (){
@@ -61,20 +63,4 @@ function updatePlates (){
         $(newdiv).append(newPlate, newAdd)
         $("#Plates").append(newdiv, newPlate, newAdd)
     }
-    console.log("yufghi")
-}
-
-function removeFromArray(array){
-    newPlates = []
-    for(let i=0; i<array.length; i++){
-        // console.log("Plates at i: "+Plates[i])
-        // console.log("this text: "+$(this).data("number"))
-        if(parseInt(array[i]) === parseInt($(this).data("number"))){
-            console.log("mathc")
-        } else{
-            newPlates.push(array[i])
-        }
-    }
-    Plates = newPlates
-    return Plates
 }
