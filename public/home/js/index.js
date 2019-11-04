@@ -11,8 +11,9 @@ $(".plate").on("click", function(){
     // total plate weight = the sum of the PVs array
     updateNums()
     // make the Plates show up on the page
-    updatePlates()
+    updatePlates(Plates)
     
+    // update the image, put the plates on the barbell
 
 })
 
@@ -26,12 +27,11 @@ $(document).on("click", ".subtract", function(){
     console.log(Plates)
     // remove the chosen value from both arrays
     removeFromArray(Plates)
-    Plates = newPlates
 
     console.log("=======")
     console.log(Plates)
-    var newPlates
-    updatePlates()
+    // var newPlates
+    // updatePlates()
 })
 
 function updateNums (){
@@ -49,6 +49,7 @@ function updateNums (){
 }
 
 function updatePlates (){
+    Plates = Plates
     $("#Plates").empty()
 
     Plates.sort(function(a, b){return (b-a)})
@@ -60,6 +61,7 @@ function updatePlates (){
         $(newdiv).append(newPlate, newAdd)
         $("#Plates").append(newdiv, newPlate, newAdd)
     }
+    console.log("yufghi")
 }
 
 function removeFromArray(array){
@@ -73,5 +75,6 @@ function removeFromArray(array){
             newPlates.push(array[i])
         }
     }
-    return newPlates
+    Plates = newPlates
+    return Plates
 }
