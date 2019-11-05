@@ -46,6 +46,8 @@ $("#clear").on("click", function(){
     PVs = []
     updateNums()
     updatePlates()
+    $("#BW").text(BW)
+
 })
 function updateNums (){
     PVs.sort(function(a, b){return (b-a)})
