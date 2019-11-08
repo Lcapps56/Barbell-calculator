@@ -34,6 +34,11 @@ html{
     border: none;
     text-align: center;
 }
+#barbell {
+    position: absolute;
+    top: 30%;
+    right: 23%
+}
 .bar {
     background: none;
     border: none;
