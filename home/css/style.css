@@ -23,27 +23,47 @@ html{
     margin: 0px;
     padding: 0px;
 }
+/* the text plates */
 .Plates{
     text-align: center;
     margin: 0px;
     margin-top: 10px;
     padding: 0px;
 }
+/* the button plates */
 .plate {
     background: none;
     border: none;
     text-align: center;
+    display: block;
+    margin:none; 
+    padding: 0px;
+}
+/* the button plates container */
+#plates{
+    text-align: center;
+    position: absolute;
+    margin-top: 10px;
+    left: 40px;
+    top: 50px;
+}
+#plates h4{
+    margin: 0px;
+    padding: 0px;
 }
 #barbell {
     position: absolute;
     top: 30%;
-    right: 23%
+    right: 25%
 }
 .bar {
     background: none;
     border: none;
     text-align: center;
-
+}
+.bar h4{
+    margin: 0px;
+    padding: 0px;
 }
 .newplate{
     display: inline-block;
@@ -54,24 +74,10 @@ html{
 
 }
 
-#plates{
-    text-align: center;
-    position: absolute;
-    /* margin-top: 10px; */
-    left: 40px;
-    top: 50px;
-}
-
-#plates button{
-    display: block;
-    margin:none; 
-    padding: 0px;
-    /* margin: 20px; */
-}
 #bars{
     position: absolute;
     right: 40px;
-    top: 350px;
+    top: 325px;
 }
 #bars button{
     display: inline-block;
