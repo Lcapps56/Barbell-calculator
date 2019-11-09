@@ -8,29 +8,30 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="info">
+      <h1 class="title">Barbell Calculator</h1>
+      <h1 class="TW">Total weight: <span  class="TW" id="TW"></span></h1>
+      <h1 class="BW">Bar weight: <span id="BW"></span></h1>
+      <h1 class="Platesinfo">Plates: <span id="Plates"></span></h1>
       <button id="clear">Clear all</button>
-    <div id="plates">
-      <button id="5" class="plate" value="10"><img src="./images/5.png" style="height: 70px; width: 70px;"><h4>5</h4></button>
-      <button id="10" class="plate" value="20"><img src="./images/10.png" style="height: 90px; width: 90px;"><h4>10</h4></button>
-      <button id="25" class="plate" value="50"><img src="./images/25.png" style="height: 110px; width: 110px;"><h4>25</h4></button>
-      <button id="35" class="plate" value="70"><img src="./images/35.png" style="height: 130px; width: 130px;"><h4>35</h4></button>
-      <button id="45" class="plate" value="90"><img src="./images/45.png" style="height: 170px; width: 170px;"><h4>45</h4></button>
     </div>
-    <img id="barbell" src="./images/barbell_0.png" style="height: 100px; width: 750px;">
-    <!-- <img id="barbell" src="../images/barbell_.png" style="height: 100px; width: 800px;"> -->
 
-    <div id="bars">
-      <button id="Bs45" class="bar" value="45"><img src="./images/rack45.png"><h4>45</h4></button>
-      <button id="B35" class="bar" value="35"><img src="./images/rack45.png"><h4>35</h4></button>
+    <div id="plateOptions">
+      <button id="5" class="plate option" value="10"><img id="five" src="./images/5.png"><h4>5</h4></button>
+      <button id="10" class="plate option" value="20"><img id="ten" src="./images/10.png"><h4>10</h4></button>
+      <button id="25" class="plate option" value="50"><img id="twentyfive" src="./images/25.png"><h4>25</h4></button>
+      <button id="35" class="plate option" value="70"><img id="thirtyfive" src="./images/35.png"><h4>35</h4></button>
+      <button id="45" class="plate option" value="90"><img id="fortyfive" src="./images/45.png"><h4>45</h4></button>
+    </div>
+
+    <img id="barbell" src="./images/barbell_0.png" >
       
+    <div id="bars">
+      <button  class="bar" value="45"><img src="./images/barbell_0.png"><h4>45</h4></button>
+      <button  class="bar" value="35"><img src="./images/barbell_0.png"><h4>35</h4></button>
     </div>
-    
-    <h1 class="TW">Total weight: <span  class="TW" id="TW"></span></h1>
-    <h1 class="BW">Bar weight: <span id="BW"></span></h1>
-    <h1 class="Plates">Plates: <span id="Plates"></span></h1>
-
-
-
+    <img id="bench" src="images/bench.png">
+  
     <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
