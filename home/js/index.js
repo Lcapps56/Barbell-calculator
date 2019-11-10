@@ -1,8 +1,9 @@
-let TW
+let TW = 0
 let BW = 0
 let TPW = 0
 let plateNum = 0
 let Plates = []
+updatePlates()
 let PVs = []
 
 $(".plate").on("click", function () {
@@ -68,7 +69,7 @@ function updateNums() {
 }
 
 function updatePlates() {
-    Plates = Plates
+
     $("#Plates").empty()
 
     Plates.sort(function (a, b) { return (b - a) })
@@ -109,7 +110,14 @@ function updatebarbell() {
             num = 7
         break
     }
+    if(plateNum >= 7){
+        num=7
+        let image = "./images/barbell_" + num + ".png"
+        $("#barbell").attr("src", image)
+
+    }
     let image = "./images/barbell_" + num + ".png"
+
     console.log(image)
     $("#barbell").attr("src", image)
 }

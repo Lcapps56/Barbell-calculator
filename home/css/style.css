@@ -7,6 +7,7 @@ html{
     background-size: cover;
     margin: 0px;
     padding: 0px; */
+    font-family: 'Raleway', sans-serif;
 }
 .title{
     text-align: center;
@@ -18,11 +19,14 @@ html{
     text-align: center;
     margin: 0px;
     padding: 0px;
+    margin: 15px 0px;
 }
 .BW{
     text-align: center;
     margin: 0px;
     padding: 0px;
+    margin: 15px 0px;
+
 }
 .Platesinfo{
     text-align: center;
@@ -39,7 +43,7 @@ html{
     position: absolute;
     top: 0px;
     left: 60px;
-    margin-top: 50px
+    margin-top: 30px
 }
 /* the button plates */
 .option {
@@ -68,13 +72,11 @@ html{
     height: 110px;
     width: 110px;
     margin: none;
-
 }
 #thirtyfive{
     height: 130px;
     width: 130px;
     margin: none;
-
 }
 #fortyfive{
     height: 170px;
@@ -117,24 +119,31 @@ html{
     margin: 0px;
     padding: 0px;
 }
+
+#bench{
+    position: absolute;
+    display: block;
+    left: 33%;
+    bottom: 2%;
+    width: 50%;
+    height: 300px;
+    width: 515px;
+}
 .newplate{
     display: inline-block;
     border: solid black 1px;
+}
+#Plates{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
 }
 .newplate h4{
     margin: 2px;
 
 }
-#bench{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 300px;
-    width: 515px;
-    margin-top: 160px;
-}
-
 
 
 
