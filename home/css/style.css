@@ -8,7 +8,7 @@ html{
     margin: 0px;
     padding: 0px; */
     font-family: 'Raleway', sans-serif;
-    text-align: center;
+    overflow: hidden;
 }
 .title{
     text-align: center;
@@ -143,7 +143,13 @@ html{
 }
 .newplate h4{
     margin: 2px;
-
+}
+a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 @media only screen and (max-width: 1280px){
@@ -215,26 +221,49 @@ html{
         top: 10px;
         left: 10px;
     }
-    #Plates .newplate{
-        margin-left: 5px;
+    /* end header styles */
+    /* start dynamic div styles */
+    #Plates{
+        width: 100%;
     }
+    #Plates .newplate{
+        margin-top: 10px;
+        margin-left: 5px;
+        height: 20px;
+        border: none;
+    }
+    #Plates .newplate h4{
+        font-size: 16px;
+    }
+    /* end dynamic div styles */
     #bench{
         display: none;
     }
-    #bars{
-        text-align: center;
-    }
-    #bars img{
-        height: 55px;
-        width: 175px;
-        margin: 0px;
-    }
+    
+    /* barbell style */
     #barbell {
+        position: absolute;
+        top: 200px;
+        left: 8%;
         display: block;
-        
         height: 75px;
         width: 325px;
     }
+
+    /* the bar options */
+    #bars{
+        position: static;
+     } 
+     #bars img{
+         height: 50px;
+         width: 275px;
+         margin: 0px;
+     } 
+     #bars h4{
+         margin: 0px;
+     } 
+
+     /* start Plate styling */
     #plateOptions{
         position: static;
         text-align: center;
@@ -278,17 +307,8 @@ html{
         width: 95px;
         margin-left: 5px;
     }
-
-    #bars{
-        position: static;
-        margin-left: 8%;
-     } 
-     #bars img{
-         height: 50px;
-         width: 275px;
-         margin: 0px;
-     } 
-     #bars h4{
-         margin: 0px;
-     } 
+    /* end plate styling */
+    a{
+        font-size: 12px;
+    }
 }
