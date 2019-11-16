@@ -33,8 +33,21 @@ h3{
     list-style: none;
 }
 #list p{
+    font-size: 13px;
     margin: 5px;
 }
 #sum{
     font-size: 13px;
+}
+#links{
+    margin-top: 100px;
+}
+#links a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+#personal a{
+    color: white;
+    text-decoration: none;
 }
