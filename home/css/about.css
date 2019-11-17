@@ -11,6 +11,15 @@ html{
     overflow: hidden;
     text-align:center;
 }
+#back{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 #title{
     font-size: 40px;
 }
@@ -28,16 +37,17 @@ h3{
 }
 #desc{
     margin-top: 25px;
+    margin-top: 50px;
 }
 #list{
     list-style: none;
 }
 #list p{
-    font-size: 13px;
+    font-size: 16px;
     margin: 5px;
 }
 #sum{
-    font-size: 13px;
+    font-size: 136x;
 }
 #links{
     margin-top: 100px;
@@ -50,4 +60,64 @@ h3{
 #personal a{
     color: white;
     text-decoration: none;
+}
+@media only screen and (max-width: 415px){
+    html{
+        background-image: url("../../images/barbell-calculator.png");
+        height: 100%;
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        text-align:center;
+    }
+    #back{
+        text-decoration: none;
+        color: black;
+        display: block;
+        font-size: 12px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #title{
+        font-size: 40px;
+    }
+    h1{
+        margin: 0px;
+        margin-top: 25px;
+    }
+    h3{
+        margin: 8px;
+    }
+    #fund{
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+    }
+    #desc{
+        margin-top: 25px;
+        margin-top: 50px;
+    }
+    #list{
+        list-style: none;
+    }
+    #list p{
+        font-size: 13px;
+        margin: 5px;
+    }
+    #sum{
+        font-size: 13px;
+    }
+    #links{
+        margin-top: 100px;
+    }
+    #links a{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+    }
+    #personal a{
+        color: white;
+        text-decoration: none;
+    }
 }
